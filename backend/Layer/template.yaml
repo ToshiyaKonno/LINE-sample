@@ -1,10 +1,9 @@
-# Stack:LINE-UseCase-HairSalon-Layer
 AWSTemplateFormatVersion: "2010-09-09"
 Transform: AWS::Serverless-2016-10-31
 Description: >
   LINE-UseCase-Layer-Sample
 
-# More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
+
 Globals:
   Function:
     Timeout: 30
@@ -21,7 +20,7 @@ Parameters:
 Mappings:
   EnvironmentMap:
     dev:
-      LayerName: LINE-USECASE-LAYER
+      LayerName: LINE-TEST
       MessageTableName: LineRemindMessage
     prod:
       LayerName: LINE-USECASE-LAYER

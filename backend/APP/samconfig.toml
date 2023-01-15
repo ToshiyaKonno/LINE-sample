@@ -4,4 +4,10 @@ version = 0.1
 [default.deploy.parameters]
 region = "ap-northeast-1"
 capabilities = "CAPABILITY_NAMED_IAM"
-parameter_overrides = "Environment=\"dev\""
+parameter_overrides = "Environment=\"dev\" ChannelType=\"LIFF\""
+stack_name = "LINEsampleApp"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-m014qmwqbf5l"
+s3_prefix = "LINEsampleApp"
+confirm_changeset = true
+disable_rollback = true
+image_repositories = []

@@ -1,4 +1,3 @@
-# Stack:LINE-UseCase-HairSalon-Batch
 AWSTemplateFormatVersion: "2010-09-09"
 Transform: AWS::Serverless-2016-10-31
 Description: >
@@ -24,14 +23,14 @@ Mappings:
       MessageTableName: LineRemindMessage
       LINEChannelAccessTokenDBName: LINEChannelAccessToken
       EventBridgeName: Line-ShortTermAccessToken-Update
-      LayerVersion: Layer Version
+      LayerVersion: 6
       LoggerLevel: DEBUG
       # TTL is True:Reservation Data will be deleted at the specified date, False:Data will not be deleted
       TTL: False
       # Set day to delete data
       # If you set TTL: True, data will be deleted in the period specified below.
       # Even if you set TTL: False, please set int value.
-      TTLDay: 10
+      TTLDay: 0
     prod:
       MessageTableName: LineMessageInfo DynamoDB Name
       LINEChannelAccessTokenDBName: LINEChannelAccessTokenLiff
